@@ -1,0 +1,53 @@
+import React from 'react';
+import { academyItems, awardItems } from '../data/gallery';
+
+export function Gallery() {
+  return (
+    <section id="gallery" className="py-20 lg:py-28">
+      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+        <div className="flex flex-wrap items-end justify-between gap-6">
+          <h2 className="font-script text-4xl font-semibold italic text-maroon-600 sm:text-5xl">Gallery</h2>
+          <p className="max-w-md text-sm leading-relaxed text-maroon-800/70">
+            Rehearsals, recitals and sangeet nights from the academy floor.
+          </p>
+        </div>
+
+        <div className="mt-12">
+          <h3 className="font-display text-2xl text-maroon-700 sm:text-3xl">Awards</h3>
+          <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {awardItems.map((item) =>
+              <figure
+                key={item.src}
+                className="group relative overflow-hidden rounded-2xl border border-gold-600/35 bg-cream-200">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="h-64 w-full object-cover transition-transform duration-300 ease-soft group-hover:scale-[1.03]" />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-maroon-800/70 px-5 py-3 font-display text-xs uppercase tracking-[0.22em] text-cream-100">
+                  {item.caption}
+                </figcaption>
+              </figure>
+            )}
+          </div>
+
+          <h3 className="mt-14 font-display text-2xl text-maroon-700 sm:text-3xl">Academy Dance Classes</h3>
+          <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {academyItems.map((item) =>
+              <figure
+                key={item.src}
+                className="group relative overflow-hidden rounded-2xl border border-gold-600/35 bg-cream-200">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="h-64 w-full object-cover transition-transform duration-300 ease-soft group-hover:scale-[1.03]" />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-maroon-800/70 px-5 py-3 font-display text-xs uppercase tracking-[0.22em] text-cream-100">
+                  {item.caption}
+                </figcaption>
+              </figure>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>);
+
+}

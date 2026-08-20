@@ -1,0 +1,35 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,600&family=Marcellus&family=Inter:wght@400;500;600&family=Mukta:wght@400;600&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+body {
+  background-color: #FDF6E9;
+  color: #33060C;
+  font-family: Inter, system-ui, sans-serif;
+}
+/* Warm ivory canvas with soft gold light, echoing the academy's poster */
+.bg-canvas {
+  background-color: #FDF6E9;
+  background-image:
+    radial-gradient(circle at 82% 8%, rgba(201, 152, 42, 0.16), transparent 42%),
+    radial-gradient(circle at 6% 74%, rgba(201, 152, 42, 0.12), transparent 40%);
+}
+.gold-rule {
+  height: 1px;
+  background-color: rgba(168, 124, 28, 0.35);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
