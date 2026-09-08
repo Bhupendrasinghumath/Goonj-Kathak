@@ -5,9 +5,9 @@ export type GalleryItem = {
 };
 
 const awardImages = [
-  
+   
+  'new 1.jpeg',
   '1000286248.jpg',
-  
   'ga2.jpg',
   'ga1.jpg',
     '1000286489.jpg',
@@ -20,6 +20,13 @@ const awardImages = [
 ];
 
 const academyImages = [
+  'new 3.jpeg',
+  'new 2.jpeg',
+  'new 4.jpeg',
+  
+  'new 6.jpeg',
+  'new 7.jpeg',
+  'new 8.jpeg',
   '1000286167.jpg',
   '1000286685.jpg',
   '1000286688.jpg',
