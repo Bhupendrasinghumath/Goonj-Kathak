@@ -16,6 +16,13 @@ const awardImages = [
   '1000286164.jpg',
   '1000286240.jpg',
   '1000286222.jpg',
+  'aw1.jpeg',
+  'aw2.jpeg',
+  
+  'aw4.jpeg',
+  'aw5.jpeg',
+  'aw6.jpeg',
+
 
 ];
 
